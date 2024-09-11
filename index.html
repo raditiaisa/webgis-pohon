@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/JalurTrack_5.js"></script><script src="layers/LokasiPenyimpananPohon_6.js"></script><script src="layers/LokasiKantor_7.js"></script><script src="layers/ASN4BoundaryJan7_8.js"></script><script src="layers/ASN4JalanPolygonJan7_9.js"></script><script src="layers/ASN4BangunanJan7_10.js"></script><script src="layers/ASN4Text_11.js"></script><script src="layers/ASN3Boundary_12.js"></script><script src="layers/ASN3JalanPolygon_13.js"></script><script src="layers/ASN3Bangunan_14.js"></script><script src="layers/ASN3Text_15.js"></script><script src="layers/ASN2Boundary_16.js"></script><script src="layers/ASN2JalanPolygon_17.js"></script><script src="layers/ASN2Bangunan_18.js"></script><script src="layers/ASN2Text_19.js"></script><script src="layers/ASN1WestResidenceBoundary_20.js"></script><script src="layers/ASN1WestResidenceJalanPolygon_21.js"></script><script src="layers/ASN1WestResidenceBangunan_22.js"></script><script src="layers/ASN1WestResidenceBangunanText_23.js"></script><script src="layers/ASN1PrecinctCoreBoundary_24.js"></script><script src="layers/ASN1PrecinctCoreJalanPolygon_25.js"></script><script src="layers/ASN1PrecinctCoreBangunan_26.js"></script><script src="layers/ASN1PrecinctCoreBangunanText_27.js"></script><script src="layers/PaspampresBoundary_28.js"></script><script src="layers/PaspampresJalanLine_29.js"></script><script src="layers/PaspampresBangunan_30.js"></script><script src="layers/PaspampresText_31.js"></script><script src="layers/BINPOLRIBoundary_32.js"></script><script src="layers/BINPOLRIJalanLine_33.js"></script><script src="layers/BINPOLRIBangunan_34.js"></script><script src="layers/BINPOLRIText_35.js"></script><script src="layers/08260910_36.js"></script>
+        <script src="styles/JalurTrack_5_style.js"></script><script src="styles/LokasiPenyimpananPohon_6_style.js"></script><script src="styles/LokasiKantor_7_style.js"></script><script src="styles/ASN4BoundaryJan7_8_style.js"></script><script src="styles/ASN4JalanPolygonJan7_9_style.js"></script><script src="styles/ASN4BangunanJan7_10_style.js"></script><script src="styles/ASN4Text_11_style.js"></script><script src="styles/ASN3Boundary_12_style.js"></script><script src="styles/ASN3JalanPolygon_13_style.js"></script><script src="styles/ASN3Bangunan_14_style.js"></script><script src="styles/ASN3Text_15_style.js"></script><script src="styles/ASN2Boundary_16_style.js"></script><script src="styles/ASN2JalanPolygon_17_style.js"></script><script src="styles/ASN2Bangunan_18_style.js"></script><script src="styles/ASN2Text_19_style.js"></script><script src="styles/ASN1WestResidenceBoundary_20_style.js"></script><script src="styles/ASN1WestResidenceJalanPolygon_21_style.js"></script><script src="styles/ASN1WestResidenceBangunan_22_style.js"></script><script src="styles/ASN1WestResidenceBangunanText_23_style.js"></script><script src="styles/ASN1PrecinctCoreBoundary_24_style.js"></script><script src="styles/ASN1PrecinctCoreJalanPolygon_25_style.js"></script><script src="styles/ASN1PrecinctCoreBangunan_26_style.js"></script><script src="styles/ASN1PrecinctCoreBangunanText_27_style.js"></script><script src="styles/PaspampresBoundary_28_style.js"></script><script src="styles/PaspampresJalanLine_29_style.js"></script><script src="styles/PaspampresBangunan_30_style.js"></script><script src="styles/PaspampresText_31_style.js"></script><script src="styles/BINPOLRIBoundary_32_style.js"></script><script src="styles/BINPOLRIJalanLine_33_style.js"></script><script src="styles/BINPOLRIBangunan_34_style.js"></script><script src="styles/BINPOLRIText_35_style.js"></script><script src="styles/08260910_36_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
